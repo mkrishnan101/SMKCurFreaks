@@ -1,0 +1,115 @@
+Python week1
+
+# Prob 1 : Write a program that takes an integer, then a string, 
+# then a char from the user and prints them in the screen.
+num = input("Please Enter an integer: ")
+str = input("Please Enter a String: ")
+chr = input("Pleae Enter a Character: ")
+print()
+print()
+print( "The integer inputted:", num)
+print( "The integer inputted:", str)
+print( "The integer inputted:", chr)
+-----------------------------------------------------------------------------------------------------------
+Input
+====
+Please Enter an integer: 6
+Please Enter a String: Name
+Pleae Enter a Character: Y
+
+output
+=======
+The integer inputted: 6
+The integer inputted: Name
+The integer inputted: Y
+========================================================================================================
+
+# Prob 2: Write a program to check whether a triangle can be formed with the given values for the angles.
+
+# If sum of angles is equal to 180, then triangle can be formed, else it can't be formed.
+angleA = int(input("Please First Angle of the Triangle: "))
+angleB = int(input("Please Second Angle of the Triangle: "))
+angleC = int(input("Please Third Angle of the Triangle: "))
+print()
+print()
+Sangle = angleA + angleB + angleC
+if (Sangle == 180):
+  print("The Triangle can be formed, since summation of all angle is: ", Sangle)
+else:
+  print("The Triangle cannot be formed, since summation of all angle is: ", Sangle)
+
+-----------------------------------------------------------------------------------------------------------
+Input
+=====
+Please First Angle of the Triangle: 45
+Please Second Angle of the Triangle: 45
+Please Third Angle of the Triangle: 45
+
+output
+=======
+The Triangle cannot be formed, since summation of all angle is:  135
+
+========================================================================================================
+# Prob 3: 
+# Given mark of student, Print the Grade
+# Grade A if mark is greater than or equal to 90
+# Grade B if mark is greater than or equal to 80
+# Grade C if mark if greater than or equal to 60
+# Grade D if mark if greaer than or equal to 35
+# Fail if mark is lesser than 35
+
+mark = int(input("Enter Mark of Student: "))
+
+if mark >= 90:
+  print("Grade A")
+elif mark >= 80:
+  print("Grade B")
+elif mark >= 60:
+  print("Grade C")
+elif mark >= 35:
+  print("Grade D")
+else:
+  print("Fail")
+--------------------------------------------------------------------------------------------------------
+Input
+=====
+Enter Mark of Student: 95
+
+output
+=======
+Grade A
+
+========================================================================================================
+
+# Prob 4: Write a program using switch case which takes a value and prints the respective Size.
+# If size is 29 then its small
+# If size is 30 then its Medium
+# If size is 38 then its Large
+# If size is 42 then its XLarge
+# If size is not any of the above then Invalid.
+
+size = int(input("Enter Size to be classified: "))
+
+match size:
+  case 29:
+    print("small")
+  case 30:
+    print("medium")
+  case 38:
+    print("Large")
+  case 42:
+    print("XLarge")
+  case _:
+    print("Invalid")
+
+--------------------------------------------------------------------------------------------------------
+Input
+=====
+Enter Size to be classified: 29
+
+
+output
+=======
+small
+========================================================================================================
+

@@ -1,0 +1,130 @@
+
+// Prob 1 : Write a program that takes an integer, then a string, then a char from the user and prints them in the screen.
+
+
+import java.util.Scanner;
+    
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter an integer: ");
+        int num = scan.nextInt();
+        System.out.println("Enter an string: ");
+        String str = scan.next();
+        System.out.println("Enter an character: ");
+        char ch = scan.next().charAt(0);
+
+        System.out.println(num);
+        System.out.println(str);
+        System.out.println(ch);
+    }
+}
+
+
+// Prob 2: Write a program to check whether a triangle can be formed with the given values for the angles.
+
+
+import java.util.Scanner;
+    
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter an 1st angle: ");
+        int angleA = scan.nextInt();
+        System.out.println("Enter an 2nd angle: ");
+        int angleB = scan.nextInt();
+        System.out.println("Enter an 3rd angle: ");
+        int angleC = scan.nextInt();
+
+        int Sangle = angleA + angleB + angleC;
+
+       if (Sangle == 180){
+        System.out.printf("The Triangle can be formed, since summation of all angles is: %d%n", Sangle);}
+       else{
+          System.out.printf("The Triangle cannot be formed, since summation of all angles is: %d%n", Sangle);
+       }
+
+    }
+}
+
+
+
+// # Prob 3: 
+// # Given mark of student, Print the Grade
+// # Grade A if mark is greater than or equal to 90
+// # Grade B if mark is greater than or equal to 80
+// # Grade C if mark if greater than or equal to 60
+// # Grade D if mark if greaer than or equal to 35
+// # Fail if mark is lesser than 35
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Enter Mark of Student:");
+
+        Scanner scan = new Scanner(System.in);
+        int mark = scan.nextInt();
+
+        if (mark >= 90) {
+            System.out.println("Grade A");
+        } else if (mark >= 80) {
+            System.out.println("Grade B");
+        } else if (mark >= 60) {
+            System.out.println("Grade C");
+        } else if (mark >= 35) {
+            System.out.println("Grade D");
+        } else {
+            System.out.println("Fail");
+        }
+
+        scan.close();
+    }
+}
+
+
+// # Prob 4: Write a program using switch case which takes a value and prints the respective Size.
+// # If size is 29 then its small
+// # If size is 30 then its Medium
+// # If size is 38 then its Large
+// # If size is 42 then its XLarge
+// # If size is not any of the above then Invalid.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Enter Size to be classified:");
+
+        Scanner scan = new Scanner(System.in);
+        int size = scan.nextInt();
+
+
+        switch(size){
+            case 29:
+                System.out.println("small");
+                break;
+            case 30:
+                System.out.println("medium");
+                break;
+            case 38:
+                System.out.println("Large");
+                break;
+            case 42:
+                System.out.println("XLarge");
+                break;
+            default:
+                System.out.println("Invalid");
+                break;
+        }
+
+        scan.close();
+    }
+}
+
