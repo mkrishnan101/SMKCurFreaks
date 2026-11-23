@@ -1,0 +1,110 @@
+// # Prob 1:
+// # Write a program which takes two values x and y. Prints x for y number of times.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Write C++ code here
+
+    int x,y;
+
+
+        cout << "Enter an integer: ";
+        cin >> x;
+
+        cout << "Enter another integer: ";
+        cin >> y;
+
+        for(int i=1; i <= y; i++){
+             cout << i << ") " <<x <<"\n" ;
+        }
+ 
+       
+
+    return 0;
+}
+============
+Enter an integer: 10
+Enter another integer: 5
+1) 10
+2) 10
+3) 10
+4) 10
+5) 10
+============
+
+
+// # Prob 2:
+// # Write a program to take x and print multiples of x till 1000.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Write C++ code here
+
+    int x,y;
+
+
+        cout << "Enter an integer: ";
+        cin >> x;
+
+        for(int i=1; i*x <= 1000; i++){
+             cout << i << ") " <<i*x <<"\n" ;
+        }
+ 
+       
+
+    return 0;
+}============
+Enter an integer: 120
+1) 120
+2) 240
+3) 360
+4) 480
+5) 600
+6) 720
+7) 840
+8) 960
+============
+// # Prob 3:
+// # Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Write C++ code here
+
+    int n;
+    string Fname, Lname;
+
+        cout << "Enter First Name: ";
+        cin >> Fname;
+        cout << "Enter Lname Name: ";
+        cin >> Lname;
+        cout << "Enter number of times: ";
+        cin >> n;
+
+        for(int i=1; i <= n; i++){
+             cout << i << ") " <<  Fname << " " << Lname << "\n" ;
+        }
+ 
+       
+
+    return 0;
+}
+============
+Enter First Name: Martin
+Enter Lname Name: Budd
+Enter number of times: 4
+1) Martin Budd
+2) Martin Budd
+3) Martin Budd
+4) Martin Budd
+============

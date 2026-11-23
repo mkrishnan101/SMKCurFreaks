@@ -1,0 +1,113 @@
+// # Prob 1:
+// # Write a program which takes two values x and y. Prints x for y number of times.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Enter an integer: ");
+        int x = scan.nextInt();
+        
+        System.out.println("Enter an integer: ");
+        int y = scan.nextInt();
+
+
+        for(int i=1; i <= y; i++){
+                System.out.println(i + ") " +x);
+        }
+        scan.close();
+    }
+}
+===============
+Enter an integer: 
+10
+Enter an integer: 
+5
+1) 10
+2) 10
+3) 10
+4) 10
+5) 10
+===============
+
+// # Prob 2:
+// # Write a program to take x and print multiples of x till 1000.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Enter an integer: ");
+        int x = scan.nextInt();
+        
+
+
+        for(int i=1; i*x <= 1000; i++){
+                System.out.println(i + ") " + i*x );
+        }
+        scan.close();
+    }
+}
+==============
+Enter an integer: 
+110
+1) 110
+2) 220
+3) 330
+4) 440
+5) 550
+6) 660
+7) 770
+8) 880
+9) 990
+==============
+
+// # Prob 3:
+// # Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter First Name: ");
+        String Fname = scan.next() ;
+        System.out.println("Enter Last Name: ");
+        String Lname = scan.next() ;
+        System.out.println("Enter number of times: ");
+        int n = scan.nextInt();
+        
+
+
+        for(int i=1; i <= n; i++){
+                System.out.println(i + ") " + Fname + " " + Lname );
+        }
+        scan.close();
+    }
+}
+
+==============
+Enter First Name: 
+Martin
+Enter Last Name: 
+Budd
+Enter number of times: 
+7
+1) Martin Budd
+2) Martin Budd
+3) Martin Budd
+4) Martin Budd
+5) Martin Budd
+6) Martin Budd
+7) Martin Budd
+==============
